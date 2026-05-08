@@ -18,7 +18,7 @@ terraform-video4/
 ## Problem — Why Hardcoding is Bad
 
 ```hcl
-# main.tf (Video 3) ❌
+# main.tf (Video 3) 
 resource "aws_s3_bucket" "demo" {
   bucket = "pythondevops-video3-demo"   # hardcoded
   tags = {
@@ -141,15 +141,15 @@ terraform {
 }
 
 provider "aws" {
-  region = var.aws_region       # ✅ variable
+  region = var.aws_region       #  variable
 }
 
 resource "aws_s3_bucket" "demo" {
-  bucket = var.bucket_name      # ✅ variable
+  bucket = var.bucket_name      #  variable
 
   tags = {
-    Env       = var.environment   # ✅ variable
-    Project   = var.project_name  # ✅ variable
+    Env       = var.environment   #  variable
+    Project   = var.project_name  #  variable
     ManagedBy = "terraform"
   }
 }
