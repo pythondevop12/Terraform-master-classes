@@ -35,7 +35,7 @@ resource "aws_s3_bucket" "demo" {
 
 ## 1. variables.tf
 
-> Think of it like **function parameters** in Python — declare what inputs your config accvideots.
+> Think of it like **function parameters** in Python — declare what inputs your config accepts.
 
 ### Syntax
 
