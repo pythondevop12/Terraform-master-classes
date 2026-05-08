@@ -6,7 +6,7 @@
 ## Project Structure
 
 ```
-terraform-ep4/
+terraform-video4/
 ├── main.tf           # Resources
 ├── variables.tf      # Variable declarations
 ├── outputs.tf        # Output declarations
@@ -18,9 +18,9 @@ terraform-ep4/
 ## Problem — Why Hardcoding is Bad
 
 ```hcl
-# main.tf (Episode 3) ❌
+# main.tf (Video 3) ❌
 resource "aws_s3_bucket" "demo" {
-  bucket = "pythondevops-ep3-demo"   # hardcoded
+  bucket = "pythondevops-video3-demo"   # hardcoded
   tags = {
     Env = "dev"                       # hardcoded
   }
@@ -35,7 +35,7 @@ resource "aws_s3_bucket" "demo" {
 
 ## 1. variables.tf
 
-> Think of it like **function parameters** in Python — declare what inputs your config accepts.
+> Think of it like **function parameters** in Python — declare what inputs your config accvideots.
 
 ### Syntax
 
@@ -104,7 +104,7 @@ variable "enable_versioning" {
 # terraform.tfvars
 
 aws_region        = "us-east-1"
-bucket_name       = "pythondevops-ep4-demo"
+bucket_name       = "pythondevops-video4-demo"
 environment       = "dev"
 project_name      = "pythondevops"
 enable_versioning = true
@@ -217,9 +217,9 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 
 Outputs:
 
-bucket_arn         = "arn:aws:s3:::pythondevops-ep4-demo"
-bucket_domain_name = "pythondevops-ep4-demo.s3.amazonaws.com"
-bucket_name        = "pythondevops-ep4-demo"
+bucket_arn         = "arn:aws:s3:::pythondevops-video4-demo"
+bucket_domain_name = "pythondevops-video4-demo.s3.amazonaws.com"
+bucket_name        = "pythondevops-video4-demo"
 bucket_region      = "us-east-1"
 versioning_status  = "Enabled"
 ```
@@ -283,13 +283,6 @@ terraform destroy
 
 ---
 
-## Next — Episode 5
-
-**Remote State with S3 + DynamoDB Locking**
-- Why local `terraform.tfstate` is dangerous for teams
-- Store state in the S3 bucket we just created
-- DynamoDB for state locking
-- `backend "s3"` configuration
 
 ---
 
