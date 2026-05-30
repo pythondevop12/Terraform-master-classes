@@ -1,4 +1,4 @@
-# 📦 Terraform — Data Sources
+# Terraform — Data Sources
 
 ---
 
