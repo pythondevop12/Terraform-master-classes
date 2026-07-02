@@ -467,5 +467,3 @@ resource "aws_instance" "bastion" {
 
 ---
 
-*Notes match the slides in: `terraform_loops_with_icons.pptx`*
-*Next topic: Dynamic Blocks*
