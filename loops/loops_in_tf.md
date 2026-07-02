@@ -1,6 +1,6 @@
-# Terraform Loops — Theory Notes
+# Terraform Loops —  Notes
 
-> **Episode:** Terraform Loops | **Channel:** PythonDevOpsAcademy
+> **Topic:** Terraform Loops | **Channel:** PythonDevOpsAcademy
 > **Covers:** `count` · `for_each` · `for` expressions
 > **AWS Region:** us-east-1 | **Terraform:** 1.10+
 
